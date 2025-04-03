@@ -45,6 +45,7 @@ if __name__ == "__main__":
     image_paths = glob.glob(f"{os.path.join(folder_path, 'id_0//*.bmp')}")
     create_gif(image_paths, output_gif_path)
 
+    #Categories data
     final_class_str = "FAKE" if final_class == 1 else "REAL"
     final_prob_mean = float(st.mean(final_prob))-2.99700927734396
 
